@@ -83,11 +83,20 @@ h4 {
 header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 1rem;
   margin-top: 20px;
-  padding-right: 400px;
-  padding-left: 400px;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+
+@media (max-width: 640px) {
+  header nav ul {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 header ul {
@@ -110,29 +119,31 @@ main {
 }
 
 /*section one*/
-.section-one {
+.reserve-a-table {
   background-color: #495E57;
   color: #edeffe;
   padding-top: 20px;
   padding-bottom: 20px;
   height: 330px;
-  padding-right: 400px;
-  padding-left: 400px;
+  padding-right: 300px;
+  padding-left: 300px;
 
   display: flex;
   flex-direction: row;
+  gap: 2rem;
   justify-content: space-between;
   align-items: center;
+  height: auto;
 }
 
-.section-one article:first-child {
+.reserve-a-table article:first-child {
   display: flex;
   flex-direction: column;
   gap: 15px;
   padding-right: 150px;
 }
 
-.section-one article p {
+.reserve-a-table article p {
   line-height: 1.5;
 }
 
@@ -145,13 +156,13 @@ main {
 }
 
 /*section two*/
-.section-two {
+.specials {
   margin-top: 100px;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
-.section-two > article {
+.specials > article {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -159,6 +170,8 @@ main {
 
 .menu-cards {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -168,8 +181,8 @@ main {
 .menu-card {
   display: flex;
   flex-direction: column;
-  width: 264px;
-  height: 439px;
+  flex: 1 1 264px;
+  max-width: 264px;
   background-color: #edeffe;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -215,11 +228,11 @@ main {
 }
 
 /*section three*/
-.section-three {
+.testimonials {
   background-color: #495E57;
   margin-top: 50px;
-  padding-left: 400px;
-  padding-right: 400px;
+  padding-left: 300px;
+  padding-right: 300px;
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
@@ -228,7 +241,7 @@ main {
   align-items: center;
 }
 
-.section-three > div {
+.testimonials > div {
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -244,6 +257,7 @@ main {
   width: 12px;
   height: auto;
 }
+
 .testinmonial {
   background-color: #edeffe;
   padding: 20px;
@@ -259,22 +273,22 @@ main {
 }
 
 /*section four*/
-.section-four {
+.founders {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-right: 400px;
-  padding-left: 400px;
+  padding-right: 300px;
+  padding-left: 300px;
   margin-top: 100px;
   gap: 50px;
 }
 
-.section-four > article {
+.founders > article {
   width: 50%;
 }
 
-.section-four img {
+.founders img {
   width: 272px;
   height: 338px;
   border: 2px solid black;
@@ -282,6 +296,7 @@ main {
 
 .brothers-images {
   position: relative;
+  max-width: 542px;
 }
 
 .brothers-images img:last-child {
@@ -300,8 +315,8 @@ footer {
   justify-content: space-between;
   gap: 2rem;
   margin-top: 100px;
-  padding-right: 400px;
-  padding-left: 400px;
+  padding-right: 300px;
+  padding-left: 300px;
 }
 
 footer img {
