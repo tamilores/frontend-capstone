@@ -35,6 +35,11 @@ li a:visited {
     color:black;
 }
 
+li a:hover {
+  color: #495E57;
+  cursor: pointer;
+}
+
 ul {
   list-style: none;
 }
@@ -47,6 +52,13 @@ button {
   height: 50px;
   border-radius: 15px;
   font-weight: bold;
+}
+
+button:hover,
+.button:hover {
+  background-color: #ffd700;
+  color: #333;
+  cursor: pointer;
 }
 
 .button {

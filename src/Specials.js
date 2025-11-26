@@ -1,10 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+
 function Specials() {
+  const navigate = useNavigate();
   return (
     <>
       <section className="specials">
           <article>
             <h3>Specials</h3>
-            <button>Online Menu</button>
+            <button onClick={() => navigate('/menu')}>Online Menu</button>
           </article>
 
           <div className="menu-cards">
